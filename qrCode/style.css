@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+  background: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+}
+
+
+html,body,main {
+  height: 100%;
+  margin: 0;
+}
+
+/* make the content magically appear in the center of the screen vertically using flexbox */
+main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+figure {
+  max-width: 290px;
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto; /*center the figure tag horizontally within the body element*/
+
+  box-shadow: 1px 1px 25px hsl(217, 11%, 72%);
+}
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+figcaption {
+  padding: 0 20px;
+  text-align: center;
+}
+figcaption p {
+  color: hsl(220, 15%, 55%);
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+figcaption h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+/* footer */
+.attribution {
+  font-size: 1.1em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
