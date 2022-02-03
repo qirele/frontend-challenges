@@ -5,8 +5,8 @@
   --primary-pale-blue : hsl(225, 100%, 94%);
   --primary-bright-blue: hsl(245, 75%, 52%);
   --neutral-very-pale-blue: hsl(225, 100%, 98%);
-  --neutral-desaturated-blue: hsl(225, 100%, 98%);
-  --neutral-dark-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
 
 }
 body {
@@ -15,6 +15,11 @@ body {
 }
 html {
   box-sizing: border-box;
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  
+
+  
 }
 *,
 *:before,
@@ -24,12 +29,51 @@ html {
   padding: 0;
 }
 p {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  color: var(--neutral-desaturated-blue);
+}
+button {
+  background-color: var(--primary-bright-blue);
+  color: var(--primary-pale-blue);
 }
 
+
 /* layout */
+html, body, main {
+  height: 100%;
+}
 
-
+main {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+main img {
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section {
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+section > a {
+  display: block;
+}
+.plan-wrapper {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  background: var(--neutral-very-pale-blue);
+  align-items: center;
+}
+.plan-wrapper a {
+  margin-left: auto;
+}
 
 /* footer */
 .attribution {
