@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* typography and basic setup */
+:root {
+  --primary-pale-blue : hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(225, 100%, 98%);
+  --neutral-dark-blue: hsl(225, 100%, 98%);
+
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 10px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1.6em;
+}
+
+/* layout */
+
+
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
