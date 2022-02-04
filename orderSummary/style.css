@@ -1,25 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 /* typography and basic setup */
 :root {
-  --primary-pale-blue : hsl(225, 100%, 94%);
+  --primary-pale-blue: hsl(225, 100%, 94%);
   --primary-bright-blue: hsl(245, 75%, 52%);
   --neutral-very-pale-blue: hsl(225, 100%, 98%);
   --neutral-desaturated-blue: hsl(224, 23%, 55%);
   --neutral-dark-blue: hsl(223, 47%, 23%);
+}
 
-}
-body {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 10px;
-}
 html {
   box-sizing: border-box;
-  background: url("images/pattern-background-desktop.svg");
-  background-repeat: no-repeat;
-  
-
-  
 }
 *,
 *:before,
@@ -28,6 +19,16 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 10px;
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-pale-blue);
+}
+
 p {
   font-size: 1.2em;
   color: var(--neutral-desaturated-blue);
@@ -36,10 +37,40 @@ button {
   background-color: var(--primary-bright-blue);
   color: var(--primary-pale-blue);
 }
-
+a {
+  color: var(--primary-bright-blue);
+  text-decoration: none;
+  font-weight: 900;
+}
+section > a {
+  color: var(--neutral-desaturated-blue);
+}
+.plan-wrapper {
+  background: var(--neutral-very-pale-blue);
+}
+section {
+  background: white;
+}
+button {
+  box-shadow: 0 20px 10px -2px var(--primary-pale-blue);
+}
+h1 {
+  font-weight: 900;
+  font-size: 2em;
+}
+.plan-wrapper p:first-of-type {
+  color: black;
+  font-weight: 900;
+}
+button {
+  font: inherit;
+  font-weight: 900;
+}
 
 /* layout */
-html, body, main {
+html,
+body,
+main {
   height: 100%;
 }
 
@@ -49,9 +80,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 10px;
 }
-main img {
+main > img {
   max-width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -59,20 +89,64 @@ main img {
 section {
   padding: 20px;
   text-align: center;
-  background: white;
-}
-section > a {
-  display: block;
-}
-.plan-wrapper {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
-  padding: 10px;
-  gap: 10px;
-  background: var(--neutral-very-pale-blue);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-wrapper {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.plan-wrapper > * {
+  height: 36px;
+}
+.plan-item-2 {
+  margin-left: auto;
+  display: flex;
   align-items: center;
 }
 .plan-wrapper a {
-  margin-left: auto;
+  text-decoration: underline;
+}
+.plan-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* states */
+button:focus,
+button:hover {
+  outline: 2px auto black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #766cf1;
+  text-decoration: none;
+}
+button:hover,
+button:active {
+  background-color: #766cf1;
+}
+section > a:active,
+section > a:hover {
+  color: black;
 }
 
 /* footer */
@@ -82,4 +156,13 @@ section > a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 660px) {
+  body {
+    background: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--primary-pale-blue);
+  }
 }
