@@ -1,0 +1,122 @@
+/* basic setup & typography*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+article:nth-of-type(1) {
+  background-color: var(--bright-orange);
+}
+article:nth-of-type(1) button {
+  color: var(--bright-orange);
+}
+
+article:nth-of-type(2) {
+  background-color: var(--dark-cyan);
+}
+article:nth-of-type(2) button {
+  color: var(--dark-cyan);
+}
+
+article:nth-of-type(3) {
+  background-color: var(--very-dark-cyan);
+}
+article:nth-of-type(3) button {
+  color: var(--very-dark-cyan);
+}
+
+button {
+  font:inherit;
+  cursor: pointer;
+}
+/* states */
+main button:hover, main button:active, main button:focus {
+  background-color: inherit;
+  color: white;
+  outline: 2px solid white;
+}
+
+/* layout */
+
+body {
+  padding: 100px 0;
+}
+
+main {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 50px;
+}
+
+article > *:not(button) {
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 50px;
+}
+
+article:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+article:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    max-width: 925px;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  article {
+    border-radius: 0;
+  }  
+
+  article:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  article:last-of-type {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
