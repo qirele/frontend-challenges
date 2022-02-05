@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
     <header>
       <img src="images/logo.svg" alt="logo splitter" />
     </header>
-
+    
+    <!-- [0-9]+\.?[0-9]* -->
     <main>
       <div class="bill-wrapper">
-        <label for="bill">Bill</label>
-        <input type="text" name="bill" id="bill" placeholder="0"/>
+        <label id="bill-label" for="bill">Bill <span class="error bill"></span></label>
+        <input type="text" name="bill" id="bill" placeholder="0" pattern="(?=.+)(?:[1-9]\d*)?(?:(\.\d+)|(0\.\d*[1-9]+\d*))?" title="input a valid number with or without a dot (fraction point)" required/>
       </div>
 
       <label id="tipChoice">Select Tip %</label>
@@ -25,12 +27,12 @@
         <button aria-labelledby="tipChoice">15%</button>
         <button aria-labelledby="tipChoice">25%</button>
         <button aria-labelledby="tipChoice">50%</button>
-        <button aria-labelledby="tipChoice">Custom</button>
+        <input type="text" aria-labelledby="tipChoice" placeholder="Custom" pattern="[1-9][0-9]?|100" title="input a number between 1 and 100"></input>
       </div>
 
       <div class="ppl-wrapper">
-        <label for="ppl-amount">Number of people</label>
-        <input type="text" name="ppl-amount" id="ppl-amount" placeholder="0"/>
+        <label id="ppl-label" for="ppl-amount">Number of people <span class="error ppl"></span></label>
+        <input type="text" name="ppl-amount" id="ppl-amount" placeholder="0" pattern="[1-9]+" title="input integer bigger than 0" required/>
       </div>
 
       <div class="total-wrapper">

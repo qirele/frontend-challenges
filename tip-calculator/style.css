@@ -6,6 +6,7 @@
   --dark-grayish2-cyan: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --light-grayish2-cyan: hsl(189, 41%, 97%);
+  --strong-cyan: hsl(172, 67%, 45%);
 }
 
 html {
@@ -76,8 +77,9 @@ input {
 }
 .total-wrapper button {
   width: 100%;
-  background: #26c2ad;
+  background: var(--strong-cyan);
   color: var(--very-dark-cyan);
+  font-size: 2rem;
 }
 
 
@@ -98,6 +100,7 @@ main {
 input {
   background: var(--light-grayish2-cyan);
   color: var(--very-dark-cyan);
+  text-align: right;
 }
 button {
   background: var(--very-dark-cyan);
@@ -122,6 +125,7 @@ button {
 }
 #tip, #total {
   font-size: 3rem;
+  color: var(--strong-cyan);
 }
 .total-wrapper div p:first-child {
   color: white;
@@ -129,3 +133,27 @@ button {
 .total-wrapper div span {
   color: var(--dark-grayish2-cyan);
 }
+
+/* states */
+button:hover, button:focus {
+  background: #a0ecdc;
+  color: var(--very-dark-cyan);
+}
+input:focus:invalid {
+  outline: 2px solid orangered;
+  
+}
+input:focus:valid {
+  outline: 2px solid green;
+  
+}
+#ppl-label , #bill-label{
+  position: relative;
+}
+.error {
+  font-size: 1.2rem;
+  color: orangered;
+  position: absolute;
+  right: 0px;
+}
+

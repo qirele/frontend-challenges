@@ -35,6 +35,8 @@ Users should be able to:
 
 ## My process
 
+
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -42,16 +44,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+### Acknowledgments
 
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+Shout out to my dude on stackoverflow who commented this:
+"To exclude zero value (e.g 0, 0.00, 0.00000, 00.00), use this modified regex: ^(?=.+)(?:[1-9]\d*)?(?:(\.\d+)|(0\.\d*[1-9]+\d*))?$"
+Truly a legend, 
+[link to comment](https://stackoverflow.com/questions/6029674/regex-for-positive-float-numbers#comment122354192_6029817)
