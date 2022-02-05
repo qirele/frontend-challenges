@@ -33,6 +33,7 @@ function calcTip() {
   
   let tipPercent;
   if (chosenTipInput.nodeName === "BUTTON") {
+    custom.value = "";
     tipPercent = parseInt(chosenTipInput.textContent.slice(0,-1));
   } else {
     if (chosenTipInput.value === "") return; // if user erases custom tip value
