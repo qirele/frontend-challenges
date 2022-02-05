@@ -135,7 +135,7 @@ button {
 }
 
 /* states */
-button:hover, button:focus {
+button:hover, button:focus, button.active {
   background: #a0ecdc;
   color: var(--very-dark-cyan);
 }
