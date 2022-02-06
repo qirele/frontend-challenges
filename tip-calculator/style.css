@@ -134,9 +134,9 @@ button {
   color: var(--dark-grayish2-cyan);
 }
 
-/* states */
+/* states and errors */
 button:hover, button:focus, button.active {
-  background: #a0ecdc;
+  background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
 }
 input:focus:invalid {
@@ -155,5 +155,10 @@ input:focus:valid {
   color: orangered;
   position: absolute;
   right: 0px;
+}
+
+#reset {
+  opacity: 0.2;
+  cursor: default;
 }
 

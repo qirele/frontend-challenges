@@ -1,3 +1,4 @@
+// inputs
 const bill = document.querySelector("#bill");
 const tipInputs = document.querySelectorAll(".percent-wrapper > *");
 const people = document.querySelector("#ppl-amount");
@@ -6,13 +7,15 @@ const custom = document.querySelector("#custom")
 const errorPpl = document.querySelector(".error.ppl");
 const errorBill = document.querySelector(".error.bill");
 
+// results
 const tip = document.querySelector("#tip");
 const total = document.querySelector("#total");
+
+const reset = document.querySelector("#reset");
 
 let chosenTipInput = null;
 
 people.addEventListener("input", () => validateInputs(people, errorPpl, "Can't be zero"));
-
 bill.addEventListener("input", () => validateInputs(bill, errorBill, "input a positive number"));
 
 function validateInputs(el, error, text){
@@ -52,15 +55,14 @@ function calcTip() {
 
   tip.textContent = `$${tipDollars.toFixed(2)}`;
   total.textContent = `$${(totalDollars + tipDollars).toFixed(2)}`;
+
+  reset.style.opacity = 1;
+  reset.style.cursor = "pointer";
+  reset.disabled = false;
 }
 
 for (let i = 0; i < tipInputs.length; i++) {
-  tipInputs[i].addEventListener("click", () => {    
-    // for (btn of tipInputs) {
-    //   btn.classList.remove("active");
-    // }
-    // tipInputs[i].classList.add("active");
-
+  tipInputs[i].addEventListener("click", () => {
     chosenTipInput = tipInputs[i];
   });
 
@@ -70,3 +72,22 @@ for (let i = 0; i < tipInputs.length; i++) {
 people.addEventListener("input", calcTip);
 bill.addEventListener("input", calcTip);
 custom.addEventListener("input", calcTip);
+
+reset.addEventListener("click", () => {
+  if (!reset.disabled) {
+    tip.textContent = "$0.00";
+    total.textContent = "$0.00";
+    bill.value = "";
+    people.value = "";
+    chosenTipInput = null;
+    bill.style.outline = "none";
+    people.style.outline = "none";
+    reset.style.opacity = "0.2"
+    reset.disabled = true;
+    reset.style.cursor = "default";
+    errorBill.textContent = "";
+    errorPpl.textContent = "";
+  }
+  
+});
+
