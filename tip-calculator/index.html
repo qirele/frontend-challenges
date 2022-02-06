@@ -16,7 +16,6 @@
     <main>
 
       <section class="input-section">
-
         <div class="bill-wrapper">
           <label id="bill-label" for="bill">Bill <span class="error bill"></span></label>
           <input
@@ -31,7 +30,7 @@
         </div>
 
         <label id="tipChoice">Select Tip %</label>
-        <div class="percent-wrapper" role="">
+        <div class="percent-wrapper">
           <button aria-labelledby="tipChoice">5%</button>
           <button aria-labelledby="tipChoice">10%</button>
           <button aria-labelledby="tipChoice">15%</button>
@@ -61,7 +60,7 @@
         </div>
       </section>
 
-      <section class="checkout">
+      <section class="checkout" aria-live="polite">
         <div>
           <p>Tip Amount <span>/ person</span></p>
           <p id="tip">$0.00</p>
@@ -72,8 +71,8 @@
         </div>
         <button id="reset" disabled>RESET</button>
       </section>
-    </main>
 
+    </main>
     
   </body>
 </html>

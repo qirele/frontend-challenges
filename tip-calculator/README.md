@@ -8,10 +8,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+- [Built with](#built-with)
 - [Author](#author)
+- [Acknowledgements](#Acknowledgments)
 
 ## Overview
 
@@ -32,9 +31,6 @@ Users should be able to:
 
 - Solution URL: [github repo](https://github.com/qirele/frontend-challenges/tree/master/tip-calculator)
 - Live Site URL: [website](https://qirele.github.io/frontend-challenges/tip-calculator/)
-
-## My process
-
 
 
 ### Built with
