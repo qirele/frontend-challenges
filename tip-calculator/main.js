@@ -37,10 +37,17 @@ function calcTip() {
 
     removeActiveBtns()
     chosenTipInput.classList.add("active");
+    custom.style.outline = "none";
   } else {
     removeActiveBtns()
 
-    if (chosenTipInput.value === "") return; // if user erases custom tip value
+    if (chosenTipInput.value === "") { // if user erases custom tip value
+      chosenTipInput.style.outline = "2px solid red";
+      return; 
+    }
+    chosenTipInput.style.outline = "none";
+    
+    
 
     tipPercent = parseInt(chosenTipInput.value);
   }
@@ -89,8 +96,6 @@ reset.addEventListener("click", () => {
     bill.value = "";
     people.value = "";
     chosenTipInput = null;
-    bill.style.outline = "none";
-    people.style.outline = "none";
     reset.style.opacity = "0.2";
     reset.disabled = true;
     reset.style.cursor = "default";
