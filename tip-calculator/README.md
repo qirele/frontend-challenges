@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github repo](https://github.com/qirele/frontend-challenges/tree/master/tip-calculator)
+- Live Site URL: [website](https://qirele.github.io/frontend-challenges/tip-calculator/)
 
 ## My process
 
@@ -49,6 +49,8 @@ Users should be able to:
 ### Acknowledgments
 
 Shout out to my dude on stackoverflow who commented this:
-"To exclude zero value (e.g 0, 0.00, 0.00000, 00.00), use this modified regex: ^(?=.+)(?:[1-9]\d*)?(?:(\.\d+)|(0\.\d*[1-9]+\d*))?$"
+
+> "To exclude zero value (e.g 0, 0.00, 0.00000, 00.00), use this modified regex: ^(?=.+)(?:[1-9]\d*)?(?:(\.\d+)|(0\.\d*[1-9]+\d*))?$"
+
 Truly a legend, 
 [link to comment](https://stackoverflow.com/questions/6029674/regex-for-positive-float-numbers#comment122354192_6029817)
