@@ -50,10 +50,6 @@ main {
   display: block;
 }
 
-.checkout {
-  margin-bottom: 0;
-}
-
 
 input {
   width: 100%;
@@ -66,13 +62,15 @@ input {
   gap: 15px;
   margin: 15px 0 40px 0;
 }
+
 .checkout {
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
+  border-radius: 20px;
 }
 .checkout > div {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -89,16 +87,10 @@ input {
 
 /* icons in the input */
 #bill {
-  background-image: url("images/icon-dollar.svg");
-  background-repeat: no-repeat;
-  background-position: 5%;
-  background-size: 15px;
+  background: var(--light-grayish2-cyan) url("images/icon-dollar.svg") no-repeat 5%/15px;
 }
 #ppl-amount {
-  background-image: url("images/icon-person.svg");
-  background-repeat: no-repeat;
-  background-position: 5%;
-  background-size: 15px;
+  background: var(--light-grayish2-cyan) url("images/icon-person.svg") no-repeat 5%/15px;
 }
 
 
@@ -137,13 +129,9 @@ button {
 }
 .checkout {
   background: var(--very-dark-cyan);
-  border-radius: 20px;
-  padding-top: 50px;
+  
 }
-.percent-wrapper button:last-child {
-  background: var(--light-grayish2-cyan);
-  color: var(--dark-grayish2-cyan);
-}
+
 #tip, #total {
   font-size: 3rem;
   color: var(--strong-cyan);
@@ -166,10 +154,8 @@ input:focus:invalid, input:hover:invalid {
 input:focus:valid, input:hover:valid {
   outline: 2px solid green;  
 }
-input:blur:valid {
-  outline: none;
-}
 
+/* error message placement top right of the input */
 #ppl-label , #bill-label{
   position: relative;
   margin-bottom: 15px;
@@ -180,12 +166,13 @@ input:blur:valid {
   position: absolute;
   right: 0px;
 }
-
+/* when page loads reset button is grayed out */
 #reset {
   opacity: 0.2;
   cursor: default;
 }
 
+/* layout on larger screens */
 @media screen and (min-width: 1000px) {
   main {
     max-width: 900px;
@@ -193,7 +180,7 @@ input:blur:valid {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     padding: 35px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
   }
 
   .percent-wrapper {

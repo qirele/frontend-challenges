@@ -102,6 +102,7 @@ reset.addEventListener("click", () => {
     errorBill.textContent = "";
     errorPpl.textContent = "";
     custom.value = "";
+    custom.style.outline = "none";
     removeActiveBtns();
   }
 });
