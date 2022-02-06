@@ -82,6 +82,20 @@ input {
   font-size: 2rem;
 }
 
+/* icons in the input */
+#bill {
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 15px;
+}
+#ppl-amount {
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 15px;
+}
+
 
 /* colors */
 body {
@@ -110,6 +124,7 @@ button {
 }
 input,
 button {
+  cursor: pointer;
   font: inherit;
   border: none;
   border-radius: 5px;
@@ -143,10 +158,13 @@ input:focus:invalid {
   outline: 2px solid orangered;
   
 }
-input:focus:valid {
-  outline: 2px solid green;
-  
+input:focus:valid, input:hover:valid {
+  outline: 2px solid green;  
 }
+input:blur:valid {
+  outline: none;
+}
+
 #ppl-label , #bill-label{
   position: relative;
 }
