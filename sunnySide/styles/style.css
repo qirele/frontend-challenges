@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
 
 body {
+  background-color: #646464;
   margin: 0 auto;
   max-width: 375px;
   color: white;
@@ -32,15 +36,17 @@ header nav {
 header ul {
   list-style: none;
   padding: 0;
-  display: flex;
   visibility: hidden;
+}
+header a {
+  padding: 20px 0;
 }
 header #burger {
   position: absolute;
   right: 20px;
   top: 35px;
 }
-header #logo {
+header .logo {
   position: absolute;
   left: 20px;
   top: 35px;

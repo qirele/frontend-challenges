@@ -1,10 +1,13 @@
 * {
   box-sizing: border-box;
+}
+h1,h2,h3, p, ul {
   margin: 0;
   padding: 0;
 }
 
 body {
+  background-color: rgb(100, 100, 100);
   margin: 0 auto;
   max-width: 375px;
   color: white;
@@ -34,16 +37,19 @@ header {
   ul {
     list-style: none;
     padding: 0;
-    display: flex;
     visibility: hidden;
   }
 
+  a {
+    padding: 20px 0;
+  }
+  
   #burger {
     position: absolute;
     right: 20px;
     top: 35px;
   }
-  #logo {
+  .logo {
     position: absolute;
     left: 20px;
     top: 35px;
