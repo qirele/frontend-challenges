@@ -1,0 +1,13 @@
+@use "reset";
+
+/* actual website styles */
+body {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
