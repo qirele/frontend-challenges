@@ -1,10 +1,10 @@
-@use "reset";
+@use "part" as *;
 
 /* actual website styles */
 body {
   max-width: 375px;
   margin: 0 auto;
-  
+  overflow-x: hidden;
 }
 
 header {
@@ -25,9 +25,48 @@ header {
       url(../../images/icon-hamburger.svg);
     background-repeat: no-repeat,no-repeat;
     background-position: center left, center right;
-    
-
   }
   
 }
+main {
+  & section {
+    padding: 20px;
+  }
+
+
+  .decor-img + section {
+    h2 {
+      margin: 40px 0 23px;
+    }
+    a {
+      display: block;
+      margin: 20px 0 40px;
+    }
+  }
+
+
+
+  %shared {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 560px;
+
+    h2 {
+      padding-top: 350px;
+    }
+  }
+
+  .bg-cherry {
+    @extend %shared;
+    background-image: url(../../images/mobile/image-graphic-design.jpg);
+  }
+  
+  .bg-orange {
+    @extend %shared;
+    background-image: url(../../images/mobile/image-photography.jpg);
+  }
+
+}
+
 

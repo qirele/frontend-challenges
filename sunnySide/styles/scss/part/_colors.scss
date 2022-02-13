@@ -1,0 +1,19 @@
+@use "vars" as *;
+
+/* colors */
+body {
+  background-color: $gray-blue-100;
+}
+main {
+  background-color: $white;
+}
+footer {
+  background-color: $dark-cyan-100;
+}
+
+header {
+  color: $white;
+}
+.decor-img + section p {
+  color: $gray-blue-200;
+}
