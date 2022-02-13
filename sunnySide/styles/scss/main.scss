@@ -4,10 +4,30 @@
 body {
   max-width: 375px;
   margin: 0 auto;
+  
 }
 
 header {
+  height: 500px;
   background-image: url("../../images/mobile/image-header.jpg");
   background-size: cover;
   background-position: bottom center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    visibility: hidden;
+  }
+
+  nav {
+    background-image: 
+      url(../../images/logo.svg),
+      url(../../images/icon-hamburger.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: center left, center right;
+    
+
+  }
+  
 }
+
