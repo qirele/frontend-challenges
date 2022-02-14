@@ -99,7 +99,11 @@ main > section .client-wrapper div p {
 }
 
 footer {
-  background-color: #458c7e;
+  background-color: #8cd9c9;
+  color: #458c7e;
+}
+footer h4 {
+  color: #25564b;
 }
 
 header {
@@ -166,6 +170,11 @@ h3 {
   font-size: 1rem;
 }
 
+footer > h4 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
 a {
   font-size: 0.9rem;
   text-decoration: none;
@@ -177,6 +186,12 @@ main > section h3 {
 }
 main > section strong + p {
   font-size: 0.85rem;
+}
+
+footer a {
+  font-family: "Barlow", sans-serif;
+  text-transform: none;
+  font-size: 1rem;
 }
 
 /* actual website styles */
@@ -200,7 +215,7 @@ header ul {
 header nav {
   background-image: url(../../images/logo.svg), url(../../images/icon-hamburger.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: center left, center right;
+  background-position: 5% 40%, 95% 40%;
 }
 
 main {
@@ -261,6 +276,29 @@ main > section .client-wrapper div {
 }
 main > section .client-wrapper:last-of-type {
   margin-bottom: 64px;
+}
+main > .decor-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer > h4 {
+  padding: 50px 0 40px;
+}
+footer div {
+  padding-bottom: 80px;
+}
+footer .logo {
+  opacity: 0.2;
+}
+footer div:first-of-type {
+  display: flex;
+  justify-content: space-around;
+}
+footer div:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

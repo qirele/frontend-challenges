@@ -31,7 +31,11 @@ main {
 
 }
 footer {
-  background-color: $dark-cyan-100;
+  background-color: $footer;
+  color: $dark-cyan-100;
+  h4 {
+    color: $dark-cyan-200;
+  }
 }
 
 header {

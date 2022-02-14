@@ -22,7 +22,7 @@ header {
   nav {
     background-image: url(../../images/logo.svg), url(../../images/icon-hamburger.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: center left, center right;
+    background-position: 5% 40%, 95% 40%;
   }
 }
 main {
@@ -101,5 +101,35 @@ main {
     }
   }
 
+  & > .decor-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
+}
+
+footer {
+  & > h4 {
+    padding: 50px 0 40px;
+  }
+  div {
+    padding-bottom: 80px;
+  }
+
+
+
+  .logo {
+    opacity: 0.2;
+  }
+
+  & div:first-of-type {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  & div:last-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 }
