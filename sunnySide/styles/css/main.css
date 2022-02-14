@@ -76,13 +76,26 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* colors */
+/* ====  colors ====*/
 body {
-  background-color: #a7abae;
+  background-color: #f7f7f8;
 }
 
 main {
   background-color: white;
+  /* testimonails colors */
+}
+main > section {
+  color: #5a636c;
+}
+main > section h3 {
+  color: #a7abae;
+}
+main > section .client-wrapper div strong {
+  color: #23303e;
+}
+main > section .client-wrapper div p {
+  color: #a7abae;
 }
 
 footer {
@@ -93,8 +106,34 @@ header {
   color: white;
 }
 
+/* section paragraphs gray text colors */
 .decor-img + section p {
   color: #818498;
+}
+
+.bg-cherry {
+  color: #25564b;
+}
+
+.bg-orange {
+  color: #19536b;
+}
+
+/* link underline colors */
+a {
+  color: inherit;
+}
+a.yellow-underline {
+  box-shadow: 0 12px 0 0 #fff2a7;
+}
+a.yellow-underline:hover, a.yellow-underline:focus {
+  box-shadow: 0 12px 0 0 #fad400;
+}
+a.red-underline {
+  box-shadow: 0 12px 0 0 #ffd1cb;
+}
+a.red-underline:hover, a.red-underline:focus {
+  box-shadow: 0 12px 0 0 #fe7867;
 }
 
 /* typography */
@@ -104,9 +143,10 @@ body {
   font-size: 18px;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, strong {
   font-family: "Fraunces", serif;
   word-wrap: break-word;
+  font-weight: 900;
 }
 
 h1, a {
@@ -116,15 +156,27 @@ h1, a {
 h1 {
   font-size: 2.5rem;
   letter-spacing: 8px;
-  font-weight: 900;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
+}
+
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+main > section h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+main > section strong + p {
+  font-size: 0.85rem;
 }
 
 /* actual website styles */
@@ -135,7 +187,7 @@ body {
 }
 
 header {
-  height: 500px;
+  height: 520px;
   background-image: url("../../images/mobile/image-header.jpg");
   background-size: cover;
   background-position: bottom center;
@@ -151,6 +203,9 @@ header nav {
   background-position: center left, center right;
 }
 
+main {
+  /* testimonials layout*/
+}
 main section {
   padding: 20px;
 }
@@ -159,22 +214,53 @@ main .decor-img + section h2 {
 }
 main .decor-img + section a {
   display: block;
-  margin: 20px 0 40px;
+  height: 10px;
+  width: 130px;
+  margin: 30px auto 40px;
+  border-radius: 10px;
 }
 main .bg-orange, main .bg-cherry {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 560px;
+  min-height: 600px;
 }
 main .bg-orange h2, main .bg-cherry h2 {
-  padding-top: 350px;
+  padding-top: 360px;
+  margin-bottom: 30px;
 }
 main .bg-cherry {
   background-image: url(../../images/mobile/image-graphic-design.jpg);
 }
 main .bg-orange {
   background-image: url(../../images/mobile/image-photography.jpg);
+}
+main > article .decor-img {
+  height: 315px;
+}
+main > article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main > section h3 {
+  margin: 40px 0 58px;
+}
+main > section .client-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main > section .client-wrapper img {
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  height: 80px;
+}
+main > section .client-wrapper div {
+  margin-top: 30px;
+}
+main > section .client-wrapper:last-of-type {
+  margin-bottom: 64px;
 }
 
 /*# sourceMappingURL=main.css.map */

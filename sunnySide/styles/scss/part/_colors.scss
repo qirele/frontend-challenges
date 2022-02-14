@@ -1,11 +1,34 @@
 @use "vars" as *;
 
-/* colors */
+/* ====  colors ====*/
 body {
-  background-color: $gray-blue-100;
+  background-color: lighten($gray-blue-100, 30%);
 }
 main {
   background-color: $white;
+
+  /* testimonails colors */
+  & > section {
+    color: $gray-blue-300;
+
+    h3 {
+      color: $gray-blue-100;
+    }
+
+    .client-wrapper {
+      div {
+        strong {
+          color: $gray-blue-400;
+        }
+        p {
+          color: $gray-blue-100;
+        }
+      }
+    }
+  }
+
+
+
 }
 footer {
   background-color: $dark-cyan-100;
@@ -14,6 +37,40 @@ footer {
 header {
   color: $white;
 }
-.decor-img + section p {
-  color: $gray-blue-200;
+/* section paragraphs gray text colors */
+.decor-img + section {
+  p {
+    color: $gray-blue-200;
+  }
+}
+
+.bg-cherry {
+  color: $dark-cyan-200;
+}
+
+.bg-orange {
+  color: $dark-blue;
+}
+
+
+/* link underline colors */
+a {
+  color: inherit;
+
+  &.yellow-underline {
+    box-shadow: 0 12px 0 0 scale-color($yellow, $lightness: 66%);  
+  }
+  &.yellow-underline:hover,
+  &.yellow-underline:focus {
+    box-shadow: 0 12px 0 0 $yellow;
+  }
+
+  &.red-underline {
+    box-shadow: 0 12px 0 0 scale-color($soft-red, $lightness: 66%);  
+  }
+
+  &.red-underline:hover,
+  &.red-underline:focus {
+    box-shadow: 0 12px 0 0 $soft-red;
+  }
 }
