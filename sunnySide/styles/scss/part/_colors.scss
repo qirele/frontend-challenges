@@ -7,8 +7,9 @@ body {
 main {
   background-color: $white;
 
-  /* testimonails colors */
+  
   & > section {
+    /* testimonails colors */
     color: $gray-blue-300;
 
     h3 {
@@ -36,10 +37,25 @@ footer {
   h4 {
     color: $dark-cyan-200;
   }
+  a:hover {
+    
+    color: $white;
+    
+  }
 }
 
 header {
   color: $white;
+
+  nav {
+    color: $gray-blue-200;
+    background-color: $white;
+
+    li:last-child a {
+      background-color: $yellow;
+      color: $gray-blue-400;
+    }
+  }
 }
 /* section paragraphs gray text colors */
 .decor-img + section {

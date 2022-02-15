@@ -60,6 +60,7 @@ header {
 }
 ```
 
+
 ### Continued development
 
 Continue focusing on mobile first development, responsive web pages, accessibility and SASS.
@@ -68,6 +69,7 @@ Continue focusing on mobile first development, responsive web pages, accessibili
 
 - [@use @forward](https://www.youtube.com/watch?v=CR-a8upNjJ0) - This helped me learn how to structure a sass directory and import partials sass files.
 
+- [triangles in css](http://www.coding-dude.com/wp/css/create-a-triangle/) - how to make a bloody triangle mate in css
 ## Author
 
 - Frontend Mentor - [@qirele](https://www.frontendmentor.io/profile/qirele)
