@@ -4,45 +4,6 @@
 body {
   background-color: lighten($gray-blue-100, 30%);
 }
-main {
-  background-color: $white;
-
-  
-  & > section {
-    /* testimonails colors */
-    color: $gray-blue-300;
-
-    h3 {
-      color: $gray-blue-100;
-    }
-
-    .client-wrapper {
-      div {
-        strong {
-          color: $gray-blue-400;
-        }
-        p {
-          color: $gray-blue-100;
-        }
-      }
-    }
-  }
-
-
-
-}
-footer {
-  background-color: $footer;
-  color: $dark-cyan-100;
-  h4 {
-    color: $dark-cyan-200;
-  }
-  a:hover {
-    
-    color: $white;
-    
-  }
-}
 
 header {
   color: $white;
@@ -55,29 +16,43 @@ header {
       background-color: $yellow;
       color: $gray-blue-400;
     }
-
-    /* change nav to fit the desktop design colors */
-    @media screen and (min-width: 1200px) {
-      
-      background-color: transparent;
-      
-
-      li {
-        &:last-child a{
-          background-color: white;
-        }
-        a {
-          color: white;
-          &:hover {
-            background-color: #75d1ff;
-            color: white;
-          }
-        }
-        
-      }
-    }
   }
 }
+
+main {
+  background-color: $white;
+
+  & > section h3 {
+    color: $gray-blue-100;
+  }
+
+  .client-wrapper {
+    color: $gray-blue-300;
+    
+    div {
+      strong {
+        color: $gray-blue-400;
+      }
+      p {
+        color: $gray-blue-100;
+      }
+    }    
+  }
+
+}
+footer {
+  background-color: $footer;
+  color: $dark-cyan-100;
+  
+  h4 {
+    color: $dark-cyan-200;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
+
 /* section paragraphs gray text colors */
 .decor-img + section {
   p {
@@ -99,19 +74,36 @@ a {
   color: inherit;
 
   &.yellow-underline {
-    box-shadow: 0 12px 0 0 scale-color($yellow, $lightness: 66%);  
-  }
-  &.yellow-underline:hover,
-  &.yellow-underline:focus {
-    box-shadow: 0 12px 0 0 $yellow;
+    box-shadow: 0 12px 0 0 scale-color($yellow, $lightness: 66%);
+
+    &:hover, &:focus { box-shadow: 0 12px 0 0 $yellow;}
   }
 
   &.red-underline {
     box-shadow: 0 12px 0 0 scale-color($soft-red, $lightness: 66%);  
+
+    &:hover, &focus { box-shadow: 0 12px 0 0 $soft-red;}
   }
 
-  &.red-underline:hover,
-  &.red-underline:focus {
-    box-shadow: 0 12px 0 0 $soft-red;
+}
+
+/* change nav colors to fit the desktop design colors */
+@media screen and (min-width: 1200px) {
+  header nav {
+    background-color: transparent;
+
+    li {
+      &:last-child a{
+        background-color: white;
+      }
+      a {
+        color: white;
+        &:hover {
+          background-color: #75d1ff;
+          color: white;
+        }
+      }
+    }
   }
+  
 }

@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshot.png)
 
 
 ### Links
@@ -53,10 +53,23 @@ Really proud of this:
 
 ```css
 header {
-  height: 500px;
-  background-image: url("../../images/mobile/image-header.jpg");
-  background-size: cover;
-  background-position: bottom center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 520px;
+  background: 
+    40px 40px / auto no-repeat url("../../images/logo.svg"),
+    bottom center / cover no-repeat url("../../images/mobile/image-header.jpg");
+}
+
+.triangle {
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  top: -29px;
+  right: 0;
+  clip-path: polygon(100% 0%, 0% 100%, 101% 100%);
+  background-color: white;
 }
 ```
 
