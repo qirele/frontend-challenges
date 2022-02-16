@@ -50,10 +50,31 @@ header {
   nav {
     color: $gray-blue-200;
     background-color: $white;
-
+  
     li:last-child a {
       background-color: $yellow;
       color: $gray-blue-400;
+    }
+
+    /* change nav to fit the desktop design colors */
+    @media screen and (min-width: 1200px) {
+      
+      background-color: transparent;
+      
+
+      li {
+        &:last-child a{
+          background-color: white;
+        }
+        a {
+          color: white;
+          &:hover {
+            background-color: #75d1ff;
+            color: white;
+          }
+        }
+        
+      }
     }
   }
 }
