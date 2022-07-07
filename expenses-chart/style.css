@@ -76,7 +76,26 @@ hr {
 }
 
 .days {
-  height: 250px;
+  height: 260px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.days > .day{
+  flex: 1;
+  height: 100%;
+}
+
+.amount {
+  height: 10%;
+}
+.graph {
+  height: 80%;
+  background-color: var(--PsoftRed);
+}
+.nameOfDay {
+  height: 10%;
 }
 
 .currentDay {
