@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --PsoftRed: hsl(10, 79%, 65%);
+  --Pcyan: hsl(186, 34%, 60%);
+  --NdarkBrown: hsl(25, 47%, 15%);
+  --NmediumBrown: hsl(28, 10%, 53%);
+  --Ncream: hsl(27, 66%, 92%);
+  --NpaleOrange: hsl(33, 100%, 98%);
+  --PbodyColor: #f9ecdc;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 540px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--PbodyColor);
+}
+
+header,
+main > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+header,
+main {
+  border-radius: 20px;
+}
+
+header {
+  background-color: var(--PsoftRed);
+  color: white;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+main {
+  background-color: white;
+  padding: 35px 40px 50px 40px;
+  color: var(--NmediumBrown);
+}
+
+h1 {
+  margin: 0;
+}
+
+header div p:last-child {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.brown {
+  color: var(--NdarkBrown);
+  font-weight: 700;
+}
+
+hr {
+  border-top: 1px solid var(--PbodyColor);
+}
+
+.days {
+  height: 250px;
+}
+
+.currentDay {
+  background-color: var(--Pcyan);
+}
