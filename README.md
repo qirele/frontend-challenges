@@ -11,4 +11,6 @@ repo where i post my frontendmentor.io solutions
 
 ## [Sunnyside agency landing page](https://qirele.github.io/frontend-challenges/sunnySide/)
 
+## [Expenses chart component](https://qirele.github.io/frontend-challenges/expenses-chart/)
+
 Lets see if this guy is funny.
