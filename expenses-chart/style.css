@@ -73,31 +73,75 @@ header div p:last-child {
 
 hr {
   border-top: 1px solid var(--PbodyColor);
+  margin: 30px 0;
 }
 
 .days {
   height: 260px;
   display: flex;
-  align-items: flex-end;
   gap: 10px;
 }
 
 .days > .day{
   flex: 1;
   height: 100%;
-}
-
-.amount {
-  height: 10%;
-}
-.graph {
-  height: 80%;
-  background-color: var(--PsoftRed);
-}
-.nameOfDay {
-  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .currentDay {
   background-color: var(--Pcyan);
+}
+
+.amount {
+  background-color: var(--NdarkBrown);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  transform: scale(0) translateY(-10px);
+  transition: all 0.3s;
+}
+.graph {
+  background-color: var(--PsoftRed) ;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dayName {
+  text-align: center;
+}
+
+.footer div:first-of-type .brown {
+  font-size: 2rem;
+}
+
+.footer div:last-of-type .brown {
+  text-align: right;
+}
+
+.footer {
+  align-items: flex-end;
+}
+
+
+@media screen and (max-width: 500px) {
+  .days > .day {
+    flex: 1;
+  }
+  .days {
+    justify-content: space-around;
+    gap: 5px;
+  }
+  .day {
+    max-width: 40px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .amount {
+    font-size: 0.5rem;
+  }
 }
