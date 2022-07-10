@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --mediumGray: hsl(0, 0%, 41%);
+  --almostBlack: hsl(0, 0%, 8%);
+}
+
+/* MOBILE FIRST DESIGN*/
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 200, 200);
+  height: 100vh;
+  width: 65%;
+}
+
+ul.active {
+  visibility: visible;
+}
+
+#burger {
+  cursor: pointer;
+}
+
+header {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+    
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  order: 1;
+}
+.right {
+  order: 0;
+}
+
