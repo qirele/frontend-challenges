@@ -1,5 +1,5 @@
 const burgerBtn = document.querySelector('.menu-btn');
-const list = document.querySelector('header ul');
+const list = document.querySelector('.navigation');
 const darkenActive = document.querySelector('.darkenPage');
 
 burgerBtn.addEventListener('click', () => {
