@@ -12,7 +12,6 @@ burgerBtn.addEventListener("click", () => {
 
 firstTwo.forEach(el => {
   el.addEventListener('click', () => {
-    console.log("click");
     let img = el.querySelector("img");
     if (img.src.includes("down")) {
       img.src = "./images/icon-arrow-up.svg";

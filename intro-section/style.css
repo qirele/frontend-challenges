@@ -193,7 +193,7 @@ span {
 
 /* hamburger icon (requires a bit of JS) */
 .menu-btn {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,6 +202,7 @@ span {
   cursor: pointer;
   transition: all .5s ease-in-out;
   z-index: 50;
+  right: 15px;
 }
 
 .menu-btn__burger {
@@ -255,3 +256,52 @@ span {
     overflow-y: scroll;
   }
 }
+
+
+/*DESKTOP DESIGN*/
+@media screen and (min-width: 1000px) {
+  main {
+    flex-direction: row;
+  }
+
+  .left {
+    order: 0;
+  }
+
+  .right {
+    order: 1;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+  .navigation {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    height: auto;
+    flex-direction: row;
+    margin: 0 0 0 100px;
+    padding: 0;
+    position: static;
+    
+  }
+  .navigation > li:nth-last-child(-n + 2) {
+    padding: 0;
+  }
+  .menu-btn {
+    display: none;
+  }
+  
+  .slide {
+    position: absolute;
+    margin-left: -45px;
+    background-color: rgba(0,0,32,0.5);
+    width: auto;
+  }
+
+  .navigation > li:nth-child(2) .slide {
+    margin-left: 20px;
+  }
+}
+/*END OF DESKTOP DESIGN*/
