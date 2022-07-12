@@ -29,6 +29,10 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  margin-top: 50px;
+}
+
 .navigation {
   list-style: none;
   padding: 0;
@@ -148,6 +152,7 @@ span {
   list-style: none;
   margin-top: 0;
   padding: 0;
+  visibility: hidden;
 }
 
 .slide li {
@@ -171,6 +176,7 @@ span {
 .dropdown:checked + .slide {
   max-height: 300px;
   margin-top: 20px;
+  visibility: visible;
 } 
 
 .navigation label img {
@@ -262,14 +268,38 @@ span {
 @media screen and (min-width: 1000px) {
   main {
     flex-direction: row;
+    gap: 150pxp;
+    margin: 39px 150px 0 150px;
   }
 
+  .darkenPage.active {
+    visibility: hidden;
+    opacity: 0;
+  }
   .left {
     order: 0;
+    text-align: left;
+    flex: 1;
+    align-self: flex-end;
   }
 
+  .left p {
+    padding-right: 200px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: revert;
+    padding-right: 150px;
+  }
   .right {
+    flex: 1;
     order: 1;
+    align-self: flex-end;
+  }
+  .right img {
+    height: 650px;
+    object-fit: cover;
   }
 
   header {
@@ -281,27 +311,42 @@ span {
     opacity: 1;
     height: auto;
     flex-direction: row;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 80px;
     padding: 0;
     position: static;
-    
+    flex: 1;
+    align-items: center;
   }
-  .navigation > li:nth-last-child(-n + 2) {
-    padding: 0;
+
+  .navigation > li:nth-child(5) {
+    margin-left: auto;
   }
+
+  .navigation > li:last-child {
+    padding: 10px 20px;
+  }
+
+
   .menu-btn {
     display: none;
   }
   
   .slide {
     position: absolute;
-    margin-left: -45px;
-    background-color: rgba(0,0,32,0.5);
+    margin-left: -65px;
     width: auto;
+    box-shadow: 1px 8px 100px -22px rgba(66, 68, 90, 1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 0;
   }
 
   .navigation > li:nth-child(2) .slide {
     margin-left: 20px;
+  }
+
+  .clients {
+    justify-content: space-between;
   }
 }
 /*END OF DESKTOP DESIGN*/
