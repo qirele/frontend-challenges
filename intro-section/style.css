@@ -197,7 +197,7 @@ span {
 
 
 
-/* hamburger icon (requires a bit of JS) */
+/* hamburger icon (requires a bit of JS) MOBILE*/
 .menu-btn {
   position: fixed;
   display: flex;
@@ -253,7 +253,7 @@ span {
   transform: rotate(-45deg) translate(-35px, -35px);
 }
 
-/* END OF HAMBURGER STYLING */
+/* END OF HAMBURGER STYLING  (MOBILE)*/
 
 /* fix the annoying bug where hamburger menu triggers freaking scrollbar to show up hecking heck omg that was painful */
 /* just show the damned scrollbar by default in order to stop the flickering scrollbar*/
@@ -265,11 +265,12 @@ span {
 
 
 /*DESKTOP DESIGN*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   main {
     flex-direction: row;
-    gap: 150pxp;
-    margin: 39px 150px 0 150px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-left: 13%;
   }
 
   .darkenPage.active {
@@ -285,12 +286,13 @@ span {
 
   .left p {
     padding-right: 200px;
+    margin-bottom: 66px;
   }
 
   h1 {
     font-size: 4rem;
     margin-top: revert;
-    padding-right: 150px;
+    padding-right: 140px;
   }
   .right {
     flex: 1;
@@ -347,6 +349,12 @@ span {
 
   .clients {
     justify-content: space-between;
+    padding-right: 200px;
   }
+
+  .clients svg {
+    transform: scale(1);
+  }
+
 }
 /*END OF DESKTOP DESIGN*/
