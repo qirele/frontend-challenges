@@ -1,5 +1,5 @@
 # frontend-challenges
-repo where i post my frontendmentor.io solutions
+Here are my frontendmentor.io website solutions, built in chronological order
 
 ## [QR code component](https://qirele.github.io/frontend-challenges/qrCode/)
 
@@ -12,5 +12,7 @@ repo where i post my frontendmentor.io solutions
 ## [Sunnyside agency landing page](https://qirele.github.io/frontend-challenges/sunnySide/)
 
 ## [Expenses chart component](https://qirele.github.io/frontend-challenges/expenses-chart/)
+
+## [Intro section with dropdown navigation](https://qirele.github.io/frontend-challenges/intro-section/)
 
 Lets see if this guy is funny.
