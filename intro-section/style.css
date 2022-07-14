@@ -54,6 +54,9 @@ h1 {
   opacity: 1;
   transform: scale(1);
 }
+.navigation > li {
+  cursor: pointer;
+}
 
 
 header {
@@ -107,7 +110,7 @@ main {
 
 .left button {
   border: none;
-  padding: 15px 20px;
+  padding: 18px 30px;
   color: white; 
   background-color: black;
   border-radius: 15px;
@@ -126,7 +129,13 @@ main {
   overflow: visible;
 }
 
+.right img {
+  margin: 0 auto;
+}
 
+.navigation li {
+
+}
 /* Style the inside of navigation list (MOBILE)*/
 /*DROPDOWN tutorial: https://codepen.io/remilaudanski/pen/gbBGyN */ 
 .navigation {
@@ -271,6 +280,7 @@ span {
     max-width: 90%;
     margin: 0 auto;
     margin-left: 13%;
+    margin-top: 50px;
   }
 
   .darkenPage.active {
@@ -286,7 +296,11 @@ span {
 
   .left p {
     padding-right: 200px;
-    margin-bottom: 66px;
+    margin-bottom: 56px;
+  }
+  .left button {
+    margin-bottom: 100px;
+
   }
 
   h1 {
@@ -302,10 +316,12 @@ span {
   .right img {
     height: 650px;
     object-fit: cover;
+    margin: 0;
   }
 
   header {
     justify-content: flex-start;
+    padding-left: 40px;
   }
   .navigation {
     visibility: visible;
@@ -320,12 +336,20 @@ span {
     align-items: center;
   }
 
+  .navigation > li {
+    margin-right: 15px;
+  }
   .navigation > li:nth-child(5) {
     margin-left: auto;
   }
 
   .navigation > li:last-child {
     padding: 10px 20px;
+  }
+
+
+  .navigation > li img {
+    margin-left: 5px;
   }
 
 
@@ -356,5 +380,16 @@ span {
     transform: scale(1);
   }
 
+  .navigation > li:hover {
+    color: black;
+    border-color: black;
+  }
+
+  .left button:hover {
+    background-color: white;
+    color: black;
+    outline: 2px solid black;
+    cursor: pointer;
+  }
 }
 /*END OF DESKTOP DESIGN*/
