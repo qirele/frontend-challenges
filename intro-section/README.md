@@ -29,10 +29,10 @@ Users should be able to:
 
 ### Screenshots
 
-![DESKTOP 1920px width](images/screenshot1920.png)
-![DESKTOP 1440px width active](images/screenshot1440active.png)
-![MOBILE 375px width](images/screenshot375.png)
-![MOBILE 375px width active](images/screenshot375active.png)
+![DESKTOP 1920px width](./images/screenshot1920.png)
+![DESKTOP 1440px width active](./images/screenshot1440active.png)
+![MOBILE 375px width](./images/screenshot375.png)
+![MOBILE 375px width active](./images/screenshot375active.png)
 
 
 ### Links
