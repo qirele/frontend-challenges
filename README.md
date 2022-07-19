@@ -15,4 +15,6 @@ Here are my frontendmentor.io website solutions, built in chronological order
 
 ## [Intro section with dropdown navigation](https://qirele.github.io/frontend-challenges/intro-section/)
 
+## [Interactive rating component solution](https://qirele.github.io/frontend-challenges/rating-component/)
+
 Lets see if this guy is funny.
