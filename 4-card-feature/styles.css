@@ -1,0 +1,90 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--VeryLightGray);
+  font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1:first-of-type {
+  font-weight: 200;
+}
+
+
+h1, h2 {
+  color: var(--VeryDarkBlue);
+}
+
+p {
+  color: var(--GrayishBlue);
+}
+
+main {
+  max-width: 1440px;
+  width: 80vw;
+  margin: 70px auto 100px auto;
+  
+}
+
+main > p, h1 {
+  text-align: center;
+}
+
+main > p {
+  margin: 20px 0 60px 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+.feature {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+}
+
+.feature img {
+  display: block;
+  margin-left: auto;
+}
+
+.feature p {
+  margin-bottom: 70px;
+  font-size: 0.9rem;
+}
+
+.feature:nth-child(1) {
+  border-top: 5px solid var(--Cyan);
+}
+.feature:nth-child(2) {
+  border-top: 5px solid var(--Red);
+}
+.feature:nth-child(3) {
+  border-top: 5px solid var(--Orange);
+}
+.feature:nth-child(4) {
+  border-top: 5px solid var(--Blue);
+}
