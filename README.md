@@ -17,4 +17,6 @@ Here are my frontendmentor.io website solutions, built in chronological order
 
 ## [Interactive rating component solution](https://qirele.github.io/frontend-challenges/rating-component/)
 
+## [Four card feature section](https://qirele.github.io/frontend-challenges/4-card-feature/)
+
 Lets see if this guy is funny.
