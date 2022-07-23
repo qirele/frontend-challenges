@@ -6,11 +6,10 @@
   --VeryDarkBlue: hsl(234, 12%, 34%);
   --GrayishBlue: hsl(229, 6%, 66%);
   --VeryLightGray: hsl(0, 0%, 98%);
-  
 }
 html {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--VeryLightGray);
   font-size: 15px;
 }
@@ -23,13 +22,12 @@ html {
   padding: 0;
 }
 
-
 h1:first-of-type {
   font-weight: 200;
 }
 
-
-h1, h2 {
+h1,
+h2 {
   color: var(--VeryDarkBlue);
 }
 
@@ -40,11 +38,12 @@ p {
 main {
   max-width: 1440px;
   width: 80vw;
-  margin: 70px auto 100px auto;
-  
+  margin: 0 auto 100px auto;
+  padding-top: 70px;
 }
 
-main > p, h1 {
+main > p,
+h1 {
   text-align: center;
 }
 
@@ -87,4 +86,54 @@ h2 {
 }
 .feature:nth-child(4) {
   border-top: 5px solid var(--Blue);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h1 + p {
+    max-width: 500px;
+    margin: 15px auto 70px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .features .feature {
+    padding: 30px;
+    border-top-width: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .feature:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feature:nth-child(1) {
+    transform: translateY(60%);
+    margin-right: 30px;
+  }
+  .feature:nth-child(4) {
+    transform: translateY(60%);
+    margin-left: 30px;
+  }
 }
