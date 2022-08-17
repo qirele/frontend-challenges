@@ -1,0 +1,302 @@
+:root {
+  --primary-pink: hsl(322, 100%, 66%);
+
+  --neutral-light-cyan: hsl(193, 100%, 96%);
+  --neutral-dark-cyan: hsl(192, 100%, 9%);
+  --neutral-gray-blue: hsl(208, 11%, 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 0.7rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.1;
+}
+
+img {
+  width: 80%;
+  max-width: 500px;
+}
+
+header {
+  overflow: auto;
+}
+
+p {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+h1,
+h2 {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--neutral-dark-cyan);
+  color: #fff;
+  overflow: auto;
+  padding: 80px 0;
+  padding-top: 110px;
+}
+
+.showcase svg{
+  margin: 30px 0; 
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 80px;
+}
+
+.logo svg {
+  width: 110px;
+}
+
+.light-bg {
+  background-color: var(--neutral-light-cyan);
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 30px;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary-pink);
+  color: #fff;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+}
+
+main .feature {
+  margin: 130px 0;
+}
+
+main .feature img {
+  margin: 0 0 30px;
+}
+
+main .feature p {
+  color: var(--neutral-gray-blue);
+}
+
+main .feature,
+.suggestion,
+.showcase,
+footer .container > p {
+  text-align: center;
+}
+
+.suggestion .container {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px 9px;
+  transform: translateY(30%);
+  max-width: 800px;
+}
+
+
+
+.contact-icon-wrapper {
+  max-width: 30px;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+
+.contact > * {
+  margin: 25px 0;
+}
+
+.contact > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact > div > div {
+  flex: 1;
+  justify-self: flex-start;
+}
+
+.contact > div > span {
+  flex: 10;
+}
+
+.links a {
+  display: block;
+  padding: 5px 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.social i {
+  width: 40px;
+  height: 40px;
+  border-radius: 200%;
+  outline: 2px solid #fff;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    padding-right: 60px;
+  }
+
+  .light-bg {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+
+  .logo .btn {
+    padding: 15px 80px;
+  }
+
+  .logo svg {
+    width: 180px;
+  }
+
+  .logo {
+    margin: 20px 0;
+  }
+
+  .showcase {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .showcase > *:nth-child(2) {
+    justify-self: flex-end;
+  }
+
+  .feature.flex {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .feature.flex > * {
+    flex: 1;
+  }
+
+  .feature.flex:nth-child(odd) > div {
+    order: -1;
+  }
+
+
+  main .feature,
+  .showcase,
+  footer .container > p {
+    text-align: left;
+  }
+
+  main .container {
+    padding-left: 60px;
+    max-width: 1200px;
+  }
+
+  .social {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .suggestion .btn-primary {
+    padding: 20px 100px;
+  }
+
+  footer .container-flex {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 100px;
+  }
+
+  .contact span {
+    padding-right: 100px;
+  }
+
+  footer .container-flex > *:nth-child(1) {
+    flex: 2;
+  }
+
+  footer .container-flex > * {
+    flex: 1;
+  }
+
+  footer .container > p {
+    text-align: right;
+  }
+
+  footer {
+    padding-top: 180px;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1200px;
+  }
+}
