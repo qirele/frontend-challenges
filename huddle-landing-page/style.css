@@ -118,10 +118,14 @@ footer {
 
 main .feature {
   margin: 130px 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+  padding-bottom: 50px;
 }
 
 main .feature img {
-  margin: 0 0 30px;
+  margin: 60px 0 30px;
+  max-width: 400px;
 }
 
 main .feature p {
@@ -202,7 +206,7 @@ footer .container > p {
   }
 
   h1 {
-    padding-right: 60px;
+    padding-right: 70px;
   }
 
   .light-bg {
@@ -236,10 +240,21 @@ footer .container > p {
     justify-self: flex-end;
   }
 
+  main {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  main .feature {
+    margin: 50px 0;    
+  }
+
   .feature.flex {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 184px;
+    padding: 0 20px 50px 150px;
+    padding-left: 150px;
   }
 
   .feature.flex > * {
@@ -255,11 +270,6 @@ footer .container > p {
   .showcase,
   footer .container > p {
     text-align: left;
-  }
-
-  main .container {
-    padding-left: 60px;
-    max-width: 1200px;
   }
 
   .social {
@@ -305,7 +315,7 @@ footer .container > p {
 
 @media screen and (min-width: 1500px) {
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
