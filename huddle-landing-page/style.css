@@ -228,6 +228,10 @@ footer .container > p {
     margin-bottom: 50px;
   }
 
+  .showcase p, .showcase h1 {
+    padding-left: 0;
+  }
+
   .showcase > *:nth-child(2) {
     justify-self: flex-end;
   }
@@ -293,6 +297,10 @@ footer .container > p {
     padding-top: 180px;
   }
 
+  h1 {
+    line-height: 1.5;
+  }
+
 }
 
 @media screen and (min-width: 1500px) {
@@ -300,3 +308,25 @@ footer .container > p {
     max-width: 1200px;
   }
 }
+
+/*STATES*/
+.btn:hover, .btn:active {
+  color: var(--neutral-gray-blue);
+}
+
+
+.btn-primary:hover, .btn-primary:active {
+  color: #fff;
+  opacity: 0.6;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+.social i:hover, .social i:active {
+  color: var(--primary-pink);
+  outline-color: var(--primary-pink);
+}
+
+

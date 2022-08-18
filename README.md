@@ -20,3 +20,5 @@ Here are my frontendmentor.io website solutions, built in chronological order
 ## [Four card feature section](https://qirele.github.io/frontend-challenges/4-card-feature/)
 
 ## [Testimonials grid section](https://qirele.github.io/frontend-challenges/testimonials-grid/)
+
+## [Huddle landing page with alternating feature blocks](https://qirele.github.io/frontend-challenges/huddle-landing-page/)
